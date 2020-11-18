@@ -42,62 +42,58 @@ function mainQuiz () {
         document.getElementById("quiz").removeAttribute("class")
     }
 
-    document.getElementById("question").innerHTML = questions[0].age
+    //question 1
+    function start (){
+        document.getElementById("question").innerHTML = questions[0].age
 
-    document.getElementById("question-1-button").innerHTML = questions[0].answer[0]
-    document.getElementById("question-2-button").innerHTML = questions[0].answer[1]
-    document.getElementById("question-3-button").innerHTML = questions[0].answer[2]
-    document.getElementById("question-4-button").innerHTML = questions[0].answer[3]
-
-    
-
-    if (button1.clicked) {
+        document.getElementById("question-1-button").innerHTML = questions[0].answer[0]
+        document.getElementById("question-2-button").innerHTML = questions[0].answer[1]
+        document.getElementById("question-3-button").innerHTML = questions[0].answer[2]
+        document.getElementById("question-4-button").innerHTML = questions[0].answer[3]
         
-    } else {
-        
+        document.getElementById("quiz-buttons").addEventListener("click", second)
     }
-    console.log(button1)
+    start()
+    
+    //question 2
+    function second (){
+        document.getElementById("question").innerHTML = questions[1].eye
+
+        document.getElementById("question-1-button").innerHTML = questions[1].answer[0]
+        document.getElementById("question-2-button").innerHTML = questions[1].answer[1]
+        document.getElementById("question-3-button").innerHTML = questions[1].answer[2]
+        document.getElementById("question-4-button").innerHTML = questions[1].answer[3]
+
+        document.getElementById("quiz-buttons").addEventListener("click", third)
+
+    }
+    
+    //question 3
+    function third () {
+        document.getElementById("question").innerHTML = questions[2].birth
+
+        document.getElementById("question-1-button").innerHTML = questions[2].answer[0]
+        document.getElementById("question-2-button").innerHTML = questions[2].answer[1]
+        document.getElementById("question-3-button").innerHTML = questions[2].answer[2]
+        document.getElementById("question-4-button").innerHTML = questions[2].answer[3]
+
+        document.getElementById("quiz-buttons").addEventListener("click", fourth)
+
+    }
+
+    //question 4
+    function fourth () {
+        document.getElementById("question").innerHTML = questions[3].name
+
+        document.getElementById("question-1-button").innerHTML = questions[3].answer[0]
+        document.getElementById("question-2-button").innerHTML = questions[3].answer[1]
+        document.getElementById("question-3-button").innerHTML = questions[3].answer[2]
+        document.getElementById("question-4-button").innerHTML = questions[3].answer[3]
+    }
 }
 mainQuiz()
 
 
-
-
-
-
-//populates html quiz-container
-
-//question1
-//document.getElementById("question").innerHTML = questions[0].age
-
-//document.getElementById("question-1-button").innerHTML = questions[0].answer[0]
-//document.getElementById("question-2-button").innerHTML = questions[0].answer[1]
-//document.getElementById("question-3-button").innerHTML = questions[0].answer[2]
-//document.getElementById("question-4-button").innerHTML = questions[0].answer[3]
-
-//question2 
-//document.getElementById("question").innerHTML = questions[1].eye
-
-//document.getElementById("question-1-button").innerHTML = questions[1].answer[0]
-//document.getElementById("question-2-button").innerHTML = questions[1].answer[1]
-//document.getElementById("question-3-button").innerHTML = questions[1].answer[2]
-//document.getElementById("question-4-button").innerHTML = questions[1].answer[3]
-
-//question3
-//document.getElementById("question").innerHTML = questions[2].birth
-
-//document.getElementById("question-1-button").innerHTML = questions[2].answer[0]
-//document.getElementById("question-2-button").innerHTML = questions[2].answer[1]
-//document.getElementById("question-3-button").innerHTML = questions[2].answer[2]
-//document.getElementById("question-4-button").innerHTML = questions[2].answer[3]
-
-//question4
-//document.getElementById("question").innerHTML = questions[3].name
-
-//document.getElementById("question-1-button").innerHTML = questions[3].answer[0]
-//document.getElementById("question-2-button").innerHTML = questions[3].answer[1]
-//document.getElementById("question-3-button").innerHTML = questions[3].answer[2]
-//document.getElementById("question-4-button").innerHTML = questions[3].answer[3]
 
 
 
