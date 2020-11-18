@@ -1,3 +1,7 @@
+.hide {
+	display: none;
+}
+
 #scores {
     color: darkviolet;
     font-size: large;
@@ -14,11 +18,16 @@
 	justify-content: center;
 }
 
-#quiz-container {
+.container {
     display:flex;
 	justify-content: center;
-	
 }
+
+.options {
+	display:none;
+}
+
+
 
 /* buttons */
 
