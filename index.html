@@ -7,24 +7,33 @@
     <link href="./assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
-    <div>
-        <div id="first-page">
-            <p>Page 1!</p>
-            <button id="question-1-button">continue to question two</button>
-        </div>
-        <div class="hide" id="second-page">
-            <p>Page 2!</p>
-            <button id="question-2-button">continue to question three</button>
-        </div>
-        <div class="hide" id="third-page">
-            <p>Page 3!</p>
-            <button id="question-3-button">continue to question four</button>
-        </div>
-        <div class="hide" id="fourth-page">
-            <p>Page 4!</p>
-            <button id="question-4-button">continue to question five</button>
-        </div>
-    </div>
+    
+        <main>
+            <section>
+                <p id="scores">View high scores</p>
+                <p id="time">Time!</p>
+            </section>
+
+            <section class="starter-page" id="begin">
+                <div class="content">
+                    <p>Coding Quiz Challenge!</p>
+                    <button id="start-button" class="buttons">Start</button>
+                </div>
+            </section>
+
+            <section id="quiz-container">
+                <div id="quiz">
+                    <p id="question"></p>
+                    <div id="quiz-buttons" class="button-choice">
+                        <button id="question-1-button" class="buttons">sdfg</button>
+                        <button id="question-2-button" class="buttons">sdfg</button>
+                        <button id="question-3-button" class="buttons">sdfg</button>
+                        <button id="question-4-button" class="buttons">sdfg</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+       
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
