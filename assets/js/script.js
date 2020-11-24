@@ -36,6 +36,30 @@ var button2 = document.getElementById("question-2-button")
 var button3 = document.getElementById("question-3-button")
 var button4 = document.getElementById("question-4-button")
 
+//timer
+document.addEventListener('DOMContentLoaded', () => {
+    //variable
+    const timeLeftDisplay = document.getElementById("seconds")
+    const startBtn = document.getElementById("start-button")
+    let timeLeft = 60
+    
+    //timer function
+    function countDown () {
+        setInterval(function(){
+            if(timeLeft <= 0 ) {
+                clearInterval(timeLeft = 0)
+            }
+            timeLeftDisplay.innerHTML = timeLeft 
+            timeLeft -=1
+        }, 1000)
+    }
+
+    startBtn.addEventListener("click", countDown)
+    
+})
+
+
+//quiz
 function mainQuiz () {
     startButton.onclick = function () {
         document.getElementById("begin").setAttribute("class", "hide")
@@ -52,6 +76,11 @@ function mainQuiz () {
         document.getElementById("question-4-button").innerHTML = questions[0].answer[3]
         
         document.getElementById("quiz-buttons").addEventListener("click", second)
+
+        if (click.button == true) {
+            console.log("me");
+        };
+
     }
     start()
     
