@@ -14,18 +14,23 @@ var questions = [
 {
     age: "How old am I?",
     answer: ["33","34","89","9"]
+    
 },
 {
     eye: "What Color are My Eyes?",
     answer: ["Brown", "Hazel", "Blue", "Green"]
+    
+    
 },
 {
     birth: "Where was I born?",
     answer: ["California", "Tennessee", "Texas", "France"]
+    
 },
 {
     name: "Whats My Mothers Name?",
     answer: ["Susan", "Lucy", "Kyle", "Levonia"]
+    
 }
 ]
 
@@ -79,19 +84,13 @@ function mainQuiz () {
         
         document.getElementById("quiz-buttons").addEventListener("click", second)
 
-        button1.addEventListener("click", function () {
-            console.log("correct")
+        addEventListener("click", function () {
+            if ("") {
+
+            }
             });
 
-        button2.addEventListener("click", function () {
-            timeLeft = timeLeft - 10;
-        });
-        button3.addEventListener("click", function () {
-            timeLeft = timeLeft - 10;
-        });
-        button4.addEventListener("click", function () {
-            timeLeft = timeLeft - 10;
-        });
+      
 
     }
     start()
@@ -107,18 +106,11 @@ function mainQuiz () {
 
         document.getElementById("quiz-buttons").addEventListener("click", third)
 
-        button1.addEventListener("click", function () {
-            timeLeft = timeLeft - 10;
+        addEventListener("click", function () {
+            console.log("correct2")
             });
-        button2.addEventListener("click", function () {
-            timeLeft = timeLeft - 10;
-        });
-        button3.addEventListener("click", function () {
-            console.log("correct")
-        });
-        button4.addEventListener("click", function () {
-            timeLeft = timeLeft - 10;
-        });
+
+       
 
     }
     
