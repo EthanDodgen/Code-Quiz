@@ -13,23 +13,26 @@
 var questions = [
 {
     age: "How old am I?",
-    answer: ["33","34","89","9"]
+    answer: ["33","34","89","9"],
+    correct1: "33"
     
 },
 {
     eye: "What Color are My Eyes?",
-    answer: ["Brown", "Hazel", "Blue", "Green"]
+    answer: ["Brown", "Hazel", "Blue", "Green"],
+    correct: "Blue"
     
     
 },
 {
     birth: "Where was I born?",
-    answer: ["California", "Tennessee", "Texas", "France"]
-    
+    answer: ["California", "Tennessee", "Texas", "France"],
+    correct: "California"
 },
 {
     name: "Whats My Mothers Name?",
-    answer: ["Susan", "Lucy", "Kyle", "Levonia"]
+    answer: ["Susan", "Lucy", "Kyle", "Levonia"],
+    correct: "Levonia"
     
 }
 ]
@@ -85,7 +88,9 @@ function mainQuiz () {
         document.getElementById("quiz-buttons").addEventListener("click", second)
 
         addEventListener("click", function () {
-            if ("") {
+            debugger
+            if ("click" === questions[0].correct1) {
+                console.log("worked")
 
             }
             });
@@ -107,7 +112,7 @@ function mainQuiz () {
         document.getElementById("quiz-buttons").addEventListener("click", third)
 
         addEventListener("click", function () {
-            console.log("correct2")
+         
             });
 
        
