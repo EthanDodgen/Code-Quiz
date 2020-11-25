@@ -36,12 +36,14 @@ var button2 = document.getElementById("question-2-button")
 var button3 = document.getElementById("question-3-button")
 var button4 = document.getElementById("question-4-button")
 
+var timeLeft = 60
+
 //timer
 document.addEventListener('DOMContentLoaded', () => {
     //variable
     const timeLeftDisplay = document.getElementById("seconds")
     const startBtn = document.getElementById("start-button")
-    let timeLeft = 60
+    
     
     //timer function
     function countDown () {
@@ -77,9 +79,19 @@ function mainQuiz () {
         
         document.getElementById("quiz-buttons").addEventListener("click", second)
 
-        if (click.button == true) {
-            console.log("me");
-        };
+        button1.addEventListener("click", function () {
+            console.log("correct")
+            });
+
+        button2.addEventListener("click", function () {
+            timeLeft = timeLeft - 10;
+        });
+        button3.addEventListener("click", function () {
+            timeLeft = timeLeft - 10;
+        });
+        button4.addEventListener("click", function () {
+            timeLeft = timeLeft - 10;
+        });
 
     }
     start()
@@ -94,6 +106,19 @@ function mainQuiz () {
         document.getElementById("question-4-button").innerHTML = questions[1].answer[3]
 
         document.getElementById("quiz-buttons").addEventListener("click", third)
+
+        button1.addEventListener("click", function () {
+            timeLeft = timeLeft - 10;
+            });
+        button2.addEventListener("click", function () {
+            timeLeft = timeLeft - 10;
+        });
+        button3.addEventListener("click", function () {
+            console.log("correct")
+        });
+        button4.addEventListener("click", function () {
+            timeLeft = timeLeft - 10;
+        });
 
     }
     
